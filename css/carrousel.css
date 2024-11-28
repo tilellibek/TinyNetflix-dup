@@ -1,0 +1,158 @@
+
+  
+  .title {
+    font-size: 30px; /* Taille de police plus grande */
+    color: #FFF; /* Couleur du texte en blanc */
+    text-align: center; /* Centrage horizontal */
+    margin-top: 30px; /* Marge inférieure augmentée */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre portée subtile */
+    letter-spacing: 1px; /* Espacement entre les lettres */
+  }
+  
+  
+  .item {
+    margin: 40px 10px;
+    background-color: #000000;
+    box-shadow: 0 15px 35px #3232321a,0 5px 15px #0000001a;
+    transition: transform 0.4s;
+    transform: translate3d(0, -1px, 0);
+    border-radius: 10px; /* Bord arrondi pour les images */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Ombre portée */
+  }
+  
+  .item:hover  {
+    transform: translate3d(0, -10px, 0);
+  }
+  
+  .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bord arrondi pour les images */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Ombre portée */
+  
+  }
+  
+  
+  .item__body {
+    padding: 25px;
+  }
+  
+  .item__title {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #232323;
+  }
+  
+  .item__description {
+    color: #585858;
+  }
+  
+  .items {
+    position: relative;
+  }
+  
+  /**
+  CAROUSEL
+   */
+  .carousel {
+    position: relative;
+  }
+  
+  .carousel__container {
+    transition: transform 0.3s;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .carousel__container::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+  
+  .carousel__item {
+    float: left;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .carousel__next, .carousel__prev {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #FFF url(right.svg) center center no-repeat;
+    background-size:  20px 20px;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -20px;
+    right: -20px;
+    box-shadow: 0 15px 35px #3232321a,0 5px 15px #0000001a;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .carousel__next:hover, .carousel__prev:hover {
+    transform: scale(1.2)
+    
+  }
+  .carousel__next:hover,
+.carousel__prev:hover {
+  background-color: rgba(255, 0, 0, 0.7); /* Changement de couleur de fond au survol */
+}
+
+  
+  .carousel__prev {
+    background-image: url(left.svg);
+    right: auto;
+    left: -20px;
+  }
+
+
+.carousel__next {
+  right: 10px; /* Ajustez la position de la flèche suivante */
+}
+
+/* Style de la pagination */
+.carousel__pagination {
+  position: absolute;
+  bottom: 20px; /* Ajustez la distance du bas selon vos besoins */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__pagination__button {
+  width: 12px; /* Ajustez la taille du bouton de pagination */
+  height: 12px; /* Ajustez la taille du bouton de pagination */
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5); /* Ajout d'une couleur de fond semi-transparente */
+  margin: 0 5px; /* Ajustez la marge entre les boutons */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel__pagination__button:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Changement de couleur de fond au survol */
+}
+
+.carousel__pagination__button--active {
+  background-color: #FFF; /* Couleur de fond du bouton actif */
+}

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+	<head>
+		<!-- Définition de l'encodage des caractères -->
+		<meta charset="utf-8">
+		<!-- Titre de la page -->
+		<title>Netflix</title>
+		<link rel="icon" href="C:\Users\tilel\OneDrive\Documents\Semestre2\web\netflix\netflix\img\netflixlogo.png" type="image/x-icon">
+		<!-- Préconnexion aux serveurs de polices Google -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<!-- Import de la police Bebas Neue depuis Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+		<!-- Préconnexion aux serveurs de polices Google -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<!-- Import de la police Roboto depuis Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<!-- Import du fichier CSS principal -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/carrousel.css">
+		<!-- Styles pour le plugin Modal jQuery -->
+		<link rel="stylesheet" href="css/jquery.modal.min.css" />
+		<script src="C:\Users\tilel\OneDrive\Documents\Semestre2\netflix\netflix\js\Swiper.js" async></script>
+		<style>
+			body {
+				overflow-x: hidden; /* Empêche le défilement horizontal */
+			}
+		</style>
+		
+	</head>
+	
+<body>
+	
+	<header>
+		<div class="container">
+			<!-- Logo Netflix -->
+			<img class="logo" src="C:\Users\tilel\OneDrive\Documents\Semestre2\web\netflix\netflix\img\netflixlogo2.png" alt="">
+			<!-- Menu de navigation en haut -->
+			<nav class="menu">
+				<!-- Liens de navigation -->
+				<a href="#">Accueil</a>
+				<a href="#">Séries</a>
+				<a href="#">Films</a>
+				<a href="#">Nouveautés</a>
+				<a href="#">Ma Liste</a>
+				<!-- Bouton de recherche -->
+				<div class="search-box">
+					<input type="text" id="search-bar" placeholder="Rechercher...">
+					<button id="search-icon"><i class="fas fa-search"></i></button>
+				</div>
+				<!-- Bouton de profil utilisateur -->
+				<a href="#" class="profile"><i class="fas fa-user"></i></a>
+				
+		</nav>
+		</div>
+	</header>
+	
+
+	
+
+	<main>
+		<!-- Section principale du contenu -->
+		<div class="principal">
+			<!-- Conteneur principal -->
+			<div class="container">
+				<!-- Titre du film -->
+				<h3 class="titreP">Leo</h3>
+				<!-- Synopsis du film -->
+				<p class="resume">
+					Leo le lézard est coincé dans la même école de Floride <br>depuis des décennies. il apprend qu'il ne lui reste plus <br>qu'un an à vivre, il prévoit de s'échapper vers la liberté,<br> mais il doit au contraire sauver sa classe de leur horrible <br>professeur remplaçant.</p>
+				<!-- Boutons d'action -->
+				<div class="boutons">
+					<!-- Bouton pour regarder le film -->
+					<button role="button" class="bouton" id="play-banner" >
+						<i class="fas fa-play" ></i>
+						<a href="#video" rel="modal:open">Lecture</a>
+					</button>
+					<!-- Bouton pour plus d'informations -->
+					<button role="button" class="bouton" id="info-banner">
+						<i class="fas fa-info-circle"></i>
+						<a href="#ex1" rel="modal:open"> PLUS D'INFORMATIONS</a>
+					</button>
+				</div>
+			</div>
+		</div>
+	
+		<!-- Modal d'informations -->
+		<div id="ex1" class="modal">
+			<a href="#" rel="modal:close"></a>
+			<img src="img/mini-info-1.jpg" class="md-image">
+			<h3 class="titre-modal">LEO</h3>
+			<p class="resume-modal">
+				Leo, un lézard blasé de 74 ans, vit dans une salle de classe en Floride depuis des décennies, avec une tortue pour copain de terrarium. Aussi, quand il apprend qu'il n'a plus qu'une année à vivre, Leo décide de s'enfuir pour découvrir la vie en liberté. Mais les petits écoliers anxieux le retiennent, craignant notamment l'arrivée d'une méchante professeure remplaçante. La liste des choses à faire absolument par le vieux lézard pendant sa dernière année de vie va s'avérer des plus étranges, mais aussi des plus gratifiantes…	</p>
+			<!-- Bouton pour regarder le film -->
+			<button role="button" class="bouton" id="play-banner">
+				<i class="fas fa-play"></i>
+				<a href="#video" rel="modal:open">regarder</a>
+			</button>
+		</div>
+	
+		<!-- Modal vidéo -->
+		<div id="video" class="modal">
+			<video width="100%" height="auto" controls>
+				<source src="img/trailer-principal.mp4" type="video/mp4">
+			</video>
+			<a href="#" rel="modal:close"></a>
+		</div>
+		
+	</main>	
+
+
+
+
+
+<!---------------------------------->
+
+
+
+<div class="container">
+
+    <div class="title">Appriciés sur Netflix</div>
+
+    <div id="carousel1">
+
+      <div class="item">
+        <div class="item__image">
+          <img src="img\mini1.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__image">
+          <img src="img\mini2.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__image">
+          <img src="img\mini3.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__image">
+          <img src="img\mini4.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__image">
+			<img src="img\mini5.jpg" alt="">
+		  </div>
+      </div>
+	  <div class="item">
+        <div class="item__image">
+			<img src="img\mini6.jpg" alt="">
+		  </div>
+      </div>
+	  <div class="item">
+        <div class="item__image">
+			<img src="img\mini7.jpg" alt="">
+		  </div>
+      </div>
+	  <div class="item">
+        <div class="item__image">
+			<img src="img\mini8.jpg" alt="">
+		  </div>
+      </div>
+	  <div class="item">
+        <div class="item__image">
+			<img src="img\mini9.jpg" alt="">
+		  </div>
+      </div>
+	  <div class="item">
+        <div class="item__image">
+			<img src="img\mini10.jpg" alt="">
+		  </div>
+      </div>
+	  <div class="item">
+        <div class="item__image">
+			<img src="img\mini11.jpg" alt="">
+		  </div>
+      </div>
+	  <div class="item">
+        <div class="item__image">
+			<img src="img\mini12.jpg" alt="">
+		  </div>
+      </div>
+	  <div class="item">
+        <div class="item__image">
+			<img src="img\mini13.jpg" alt="">
+		  </div>
+      </div>
+    </div>
+<div class="title">Kdarama</div>
+	<div id="carousel2">
+
+		<div class="item">
+		  <div class="item__image">
+			<img src="img\mini14.jpg" alt="">
+		  </div>
+		</div>
+  
+		<div class="item">
+		  <div class="item__image">
+			<img src="img\mini15.jpg" alt="">
+		  </div>
+		</div>
+  
+		<div class="item">
+		  <div class="item__image">
+			<img src="img\mini16.jpg" alt="">
+		  </div>
+		</div>
+  
+		<div class="item">
+		  <div class="item__image">
+			<img src="img\mini17.jpg" alt="">
+		  </div>
+		</div>
+  
+		<div class="item">
+		  <div class="item__image">
+			  <img src="img\mini18.jpg" alt="">
+			</div>
+		</div>
+		<div class="item">
+		  <div class="item__image">
+			  <img src="img\mini19.jpg" alt="">
+			</div>
+		</div>
+		<div class="item">
+		  <div class="item__image">
+			  <img src="img\mini20.jpg" alt="">
+			</div>
+		</div>
+		<div class="item">
+		  <div class="item__image">
+			  <img src="img\mini21.jpg" alt="">
+			</div>
+		</div>
+		
+	</div>
+	<div class="title">Anime</div>
+	<div id="carousel3">
+
+		<div class="item">
+		  <div class="item__image">
+			<img src="img\mini22.jpg" alt="">
+		  </div>
+		</div>
+  
+		<div class="item">
+		  <div class="item__image">
+			<img src="img\mini23.jpg" alt="">
+		  </div>
+		</div>
+  
+		<div class="item">
+		  <div class="item__image">
+			<img src="img\mini24.jpg" alt="">
+		  </div>
+		</div>
+  
+		<div class="item">
+		  <div class="item__image">
+			<img src="img\mini25.jpg" alt="">
+		  </div>
+		</div>
+  
+		<div class="item">
+		  <div class="item__image">
+			  <img src="img\mini26.jpg" alt="">
+			</div>
+		</div>
+		<div class="item">
+		  <div class="item__image">
+			  <img src="img\mini27.jpg" alt="">
+			</div>
+		</div>
+		<div class="item">
+		  <div class="item__image">
+			  <img src="img\mini28.jpg" alt="">
+			</div>
+		</div>
+		<div class="item">
+		  <div class="item__image">
+			  <img src="img\mini29.jpg" alt="">
+			</div>
+		</div>
+		
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------------------------------------------------->
+<footer>
+    <div class="footer-container">
+        <div class="footer-links">
+            <a href="#">Questions ? Contactez-nous.</a>
+            <a href="#">Conditions d'utilisation</a>
+            <a href="#">Informations sur la société</a>
+            <a href="#">Centre d'aide</a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Compte</a>
+            <a href="#">Médias du centre</a>
+            <a href="#">Investisseurs</a>
+            <a href="#">Recrutement</a>
+        </div>
+        <div class="footer-links">
+            <a href="mailto:tilellibektache@gmail.com">@mail</a> <!-- Ajoutez votre adresse e-mail ici -->
+            <a href="https://www.linkedin.com/in/tilelli-bektache/" target="_blank">LinkedIn</a> <!-- Ajoutez votre lien LinkedIn ici -->
+            <a href="https://www.instagram.com/tileelli/" target="_blank">Instagram</a> <!-- Ajoutez votre compte Instagram ici -->
+        </div>
+        <div class="footer-links">
+            <a href="#">Conditions générales de vente</a>
+            <a href="#">Avis de confidentialité</a>
+            <a href="#">Publicités personnalisées</a>
+            <a href="#">Préférences de cookies</a>
+        </div>
+        <div class="footer-country">Netflix France</div>
+    </div>
+</footer>
+
+
+
+
+<!--------------------------------------------------->
+
+
+
+
+
+
+<!-- scripts -->
+
+<!-- Scripts Font Awesome -->
+<script src="https://kit.fontawesome.com/f8703c41a7.js" crossorigin="anonymous"></script>
+
+<!-- Scripts  Carousel -->
+<script src="js/scripts.js"></script> <!-- Scripts personnalisés pour votre site -->
+
+
+
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> <!-- jQuery est requis pour jQuery Modal -->
+<script src="js/jquery.modal.min.js"></script> <!-- Plugin jQuery Modal -->
+<!-- Fin des scripts -->
+
+
+</body>
+
+</html>
